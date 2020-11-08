@@ -1,0 +1,35 @@
+@import "~bootstrap/scss/bootstrap";
+
+.masonry {
+  columns: 6 250px;
+  column-gap: 1rem;
+  .brick {
+    width: 150px;
+    margin: 0 1rem 1rem 0;
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.photo-pile {
+  position: relative;
+  .placeholder {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    .duplicates {
+      font-size: 0.8rem;
+      .number {
+        display: block;
+        line-height: 0.8;
+        font-size: 2.2rem;
+      }
+    }
+  }
+}
