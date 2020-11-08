@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import { useMachine } from './Machines';
+import { useMachine } from './machines/useMachine';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
@@ -52,7 +52,7 @@ const App = () => {
           <Container>
             <div className="masonry">
               {feed.value.photos.map((p) => (
-                <div className="brick photo-pile">
+                <div className="brick photo-pile" key={p.id}>
                   <img src={p.urls.small} style={{ width: '100%' }} alt={p.description} />
                   <div className="placeholder p-2">
                     <span className="duplicates">
