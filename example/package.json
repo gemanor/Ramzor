@@ -19,7 +19,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "npm run link:ramzor && react-scripts start",
+    "start": "react-scripts start",
     "build": "npm run link:ramzor && react-scripts build",
     "test": "npm run link:ramzor && react-scripts test",
     "link:ramzor": "cd ../ && npm run build && npm link && cd ./example && npm link ramzor"

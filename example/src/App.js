@@ -9,6 +9,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Gallery from './machines/gallery';
 import Search from './machines/search';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faSpinner, faBinoculars, faBullseye } from '@fortawesome/free-solid-svg-icons';
+library.add(faSpinner, faBinoculars, faBullseye);
 
 
 const App = () => {
